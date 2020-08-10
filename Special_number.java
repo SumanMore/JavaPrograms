@@ -8,6 +8,7 @@
  *
  * @author Dell
  */
+// 145 is a special number because sum of factorial of its digits is equal to the original number 1! + 4! + 5! = 145 ( 5!=5*4*3*2*1 , 4!= 4*3*2*1 , 1!= 1 )
 import java.util.*;
 public class Special_number {
     public static void main(String args[])
