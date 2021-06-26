@@ -1,21 +1,35 @@
 class Main {
   public static void main(String[] args)
    {
-     
-    long  x=0b01111;
-    System.out.println(Long.toBinaryString(closestinteger(x)));
-    }
-
+    long x=0b1101,y=0b1001;
+    //long x=0b10,y=0b100101;
+   System.out.println(Long.toBinaryString(multiply(x,y)));
    
+}
+  public static long multiply(long x,long y)
+   {
+    long res =0,k=0,c=0;
+    while (x !=0) 
+    {
+      if ((x & 1) != 0)
+      {
+        c++;
+      res = add(res , y<<k);
+      }
+    k=k+1;
+    x>>=1;}
+    
+    return res;
+    }  
+    public static long add(long res,long y) 
+    { 
+      long carry=0;
+      while(y!=0)
+      {
+        carry=res&y;
+        res=res^y;
+        y=carry<<1;
+      }
+return res;
+    }}
 
-public static long closestinteger(long x) {
-int n=5;
-for (int i = 0; i < n- 1; ++i) {
-if ((((x >> i) & 1) != ((x >> (i + 1)) & 1))) 
-{
-x ^= (1 << i) | (1 << (i + 1)); 
-}}
-return x;
-//System.out.println(16&~(16-1));
-}
-}
