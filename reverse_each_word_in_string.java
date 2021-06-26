@@ -24,6 +24,58 @@ public class reverse_each_word_in_string {
 
 }}
 /*
+
+public class Main {
+  public static void main(String[] args) {
+   String str="Ram is costly";
+   char ch[]=str.toCharArray();
+   int l=str.length();
+  System.out.println(reverseWords(ch));
+  }
+
+
+public static char[] reverseWords(char[] input)
+{
+
+reverse ( input , 0, input . length) ;
+int start = 0, end;
+while ((end = find(input, ' ' , start)) != -1)
+{
+reverse (input , start, end);
+start = end + 1;
+}
+reverse(input , start, input.length);
+return input;
+}
+
+public static void reverse(char[] array, int start, int stoplndex)
+{
+if (start >= stoplndex) 
+{
+return ;
+}
+int last = stoplndex - 1;
+for (int i = start; i <= start + (last - start) / 2; i++)
+{
+char tmp = array[i];
+array[i] = array[last - i + start];
+array[last - i + start] = tmp;
+}
+
+}
+
+
+
+public static int find(char[] array, char c, int start) 
+{
+for (int i = start; i < array.length ; i++) 
+{
+if (array[i] == c)
+{
+return i ;
+}}
+return -1;
+}}
 output
 enter the string
 i love programming
