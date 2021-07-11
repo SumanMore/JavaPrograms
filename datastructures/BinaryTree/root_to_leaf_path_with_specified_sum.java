@@ -1,3 +1,9 @@
+/*
+Write a program which takes asinput an integer and a binary tree with integer node
+weights, and checksif there exists a leaf whose path weight equals the given integer
+*/
+
+
 public class Node
 {
   public int data;
