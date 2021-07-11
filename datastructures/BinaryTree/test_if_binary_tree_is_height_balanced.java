@@ -1,6 +1,7 @@
 /*
-Design an algorithm to compute the sum of the binary numbers represented by the
-root-to-leaf paths
+Write a program that takes asinput the root of a binary tree and checks whether the
+tree is height-balanced.
+
 */
 
 
