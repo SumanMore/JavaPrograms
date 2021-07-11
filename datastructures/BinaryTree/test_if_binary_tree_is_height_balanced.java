@@ -1,3 +1,21 @@
+public class Node
+{
+  public int data;
+ 
+  public Node left,right;
+  Node(int d)
+  
+  {
+    data=d;
+    left=null;
+    right=null;
+  }
+}
+
+
+
+
+
 public class test_if_binary_tree_is_height_balanced {
     
         public static void preorder(Node root)
